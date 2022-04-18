@@ -1,0 +1,26 @@
+.user-container {
+  width: 800px;
+  margin: 0 auto;
+
+  .user-wrap {
+    display: inline-flex;
+    margin: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .loading {
+    font-size: 20px;
+  }
+
+  .err {
+    font-size: 20px;
+    color: red;
+  }
+}
