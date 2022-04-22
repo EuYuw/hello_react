@@ -1,14 +1,15 @@
 // 创建外壳APP
 import React, { Component } from 'react';
-import BaseRoute from './feature/BaseRoute';
+import Entry from './pages/Entry';
 
 // 暴露App组件
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <BaseRoute></BaseRoute>
-      </div>
+      <>
+        {/* 空标签，不会渲染真实dom，相当于vue template， 也可以使用Fragment标签 */}
+        <Entry></Entry>
+      </>
     );
   }
 }

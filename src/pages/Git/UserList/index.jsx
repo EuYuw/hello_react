@@ -12,7 +12,7 @@ export default class UserList extends Component {
   componentDidMount() {
     this.pubSubId = PubSub.subscribe('USER_CHANGE', (_, data) => {
       // 消息订阅
-      this.setState(data);
+      this.setState(data); // setState是一个异步的操作，可加第二个参数（回调函数）做一些更新后的操作
     });
   }
 

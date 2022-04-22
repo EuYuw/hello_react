@@ -13,17 +13,17 @@ export default class News extends Component {
       {
         id: '1',
         name: '新闻1',
-        content: '你好a，react'
+        content: '你好,react'
       },
       {
         id: '2',
         name: '新闻2',
-        content: '你好，reactsfsdfasdasfasd'
+        content: '你好,reactsfsdfasdasfasd'
       },
       {
         id: '3',
         name: '新闻3',
-        content: '你好，reactsdfasdfsdfsd'
+        content: '你好,reactsdfasdfsdfsd'
       }
     ]
   };
