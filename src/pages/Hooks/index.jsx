@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 function HooksDemo() {
   const [count, setCount] = React.useState(0); // 使用state，参数为默认值
   const [name, setName] = React.useState('WY'); // 使用state
+  let refInput = React.useRef();
 
   function addCount() {
     setCount((count) => ++count);
@@ -18,6 +19,10 @@ function HooksDemo() {
 
   function unmountNode() {
     ReactDOM.unmountComponentAtNode(document.getElementById('root'));
+  }
+
+  function getInputValue() {
+    alert(refInput.value);
   }
 
   // 使用useEffect，一个方法能使用三种声明周期
@@ -40,6 +45,8 @@ function HooksDemo() {
         <button onClick={addCount}>点击+1</button>
         <button onClick={changeName}>点击改名</button>
         <button onClick={unmountNode}>卸载组件</button>
+        <input type="text" ref={(n) => (refInput = n)} placeholder="hooks useRef" />
+        <button onClick={getInputValue}>获取input值</button>
       </div>
     </div>
   );
